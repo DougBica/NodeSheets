@@ -34,7 +34,7 @@ class Aluno{
     }
 
     calculaMedia(elem) {
-        let media = parseInt(elem[0]/ 3 + elem[1]/ 3 + elem[0]/ 3);
+        let media = Math.round((parseInt(elem[0]) + parseInt(elem[1]) + parseInt(elem[2])) /3);
         return media;
     }
 
